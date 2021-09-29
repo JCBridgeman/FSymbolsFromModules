@@ -19,7 +19,7 @@ dualEnd[a_]/;MemberQ[reps,a]:=Module[{v=Abs[VEnd[a,#][unitEnd]]&/@reps},reps[[Po
 OverBar[a_]/;MemberQ[reps,a]:=dualEnd[a]
 
 
-tube[m_,n_][p_,q_][\[Alpha]0_,x_,\[Beta]0_]/;(\[Alpha]0<=W[x,m][p]&&\[Beta]0<=W[x,n][q]==1):=tub[m,n][p,q][\[Alpha]0,x,\[Beta]0];
+tube[m_,n_][p_,q_][\[Alpha]0_,x_,\[Beta]0_]/;(\[Alpha]0<=W[x,m][p]&&\[Beta]0<=W[x,n][q]):=tub[m,n][p,q][\[Alpha]0,x,\[Beta]0];
 tube[m_,n_][p_,q_][\[Alpha]0_,x_,\[Beta]0_]:=0;
 
 tubes[m_,n_][p_,q_]:=DeleteCases[Table[tube[m,n][p,q][\[Alpha]0,x,\[Beta]0],{x,obs},{\[Alpha]0,W[x,m][p]},{\[Beta]0,W[x,n][q]}],0]
