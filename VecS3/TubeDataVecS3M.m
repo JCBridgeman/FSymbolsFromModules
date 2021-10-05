@@ -7,6 +7,8 @@
 reps={1,\[Psi],\[DoubledPi]};
 dimVS[1]:=1;dimVS[\[Psi]]:=1;dimVS[\[DoubledPi]]:=2;(*Vector space dimensions*)
 
+repNames[x_]/;MemberQ[reps,x]:=x
+
 
 (* ::Subsubsection:: *)
 (*Representations*)
@@ -24,7 +26,6 @@ e[\[DoubledPi]][1,0]:={0,1/(2 Sqrt[3]),-(1/(2 Sqrt[3])),0,-(1/(2 Sqrt[3])),1/(2 
 (*Embedding maps*)
 
 
-(* ::Code::Initialization:: *)
 VEmbedding[1->1\[CircleTimes]1,1]={{6^(1/4) }};
 VEmbedding[\[Psi]->1\[CircleTimes]\[Psi],1]={{6^(1/4) }};
 VEmbedding[\[DoubledPi]->1\[CircleTimes]\[DoubledPi],1]={{6^(1/4) ,0},{0,6^(1/4) }};

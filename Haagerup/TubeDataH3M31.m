@@ -7,6 +7,8 @@
 reps={1,\[Mu],\[Eta],\[Nu]};
 dimVS[1]:=4;dimVS[\[Mu]]:=9;dimVS[\[Eta]]:=13;dimVS[\[Nu]]:=17;(*Vector space dimensions*)
 
+repNames[x_]/;MemberQ[reps,x]:=x
+
 
 (* ::Subsubsection:: *)
 (*Representations*)

@@ -7,6 +7,8 @@
 reps={1,\[Psi]};
 dimVS[1]:=1;dimVS[\[Psi]]:=1;
 
+repNames[x_]/;MemberQ[reps,x]:=x
+
 
 (* ::Subsubsection:: *)
 (*Representations*)
