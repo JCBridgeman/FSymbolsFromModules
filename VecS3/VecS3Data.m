@@ -13,7 +13,7 @@ V[a_,b_][c_]:=Count[
 {{5},{4},{3},{2},{1},{0}}
 }[[a+1,b+1]],c];
 
-objNames=<|0->1,1->\[Sigma],2->\[Sigma]^2,3->\[Rho],4->\[Sigma] \[Tau],5->\[Sigma]^2 \[Tau]|>;
+objNames=<|0->1,1->\[Sigma],2->\[Sigma]^2,3->\[Tau],4->\[Sigma] \[Tau],5->\[Sigma]^2 \[Tau]|>;
 
 
 FData:={X0[a_,b_,c_][d_][1,e_,1][1,f_,1]:>1};
